@@ -1,0 +1,28 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-main);
+    font-size: var(--size-sm);
+    border-radius: var(--size-sm);
+    padding: var(--size-xxs) var(--size-xl);
+    background-color: var(--color-second);
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    cursor: pointer;
+
+    &--second {
+        background-color: var(--color-bright);
+        color: var(--color-dark);
+        &:hover {
+            background-color: var(--color-dark);
+            color: var(--color-bright);
+        }
+    }
+
+    &:hover {
+        background-color: var(--color-dark);
+    }
+}

@@ -1,0 +1,16 @@
+.location {
+    &__map {
+        height: calc((1vh + 1vw) * 25);
+        width: 100%;
+        border-radius: var(--size-sm);
+        overflow: hidden;
+        z-index: 3;
+
+        position: relative;
+    }
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
