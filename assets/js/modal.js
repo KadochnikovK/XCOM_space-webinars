@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Обработка изменения чекбокса
+  
     const checkbox = form.querySelector('input[type="checkbox"]');
     if (checkbox) {
       checkbox.addEventListener("change", function (e) {
