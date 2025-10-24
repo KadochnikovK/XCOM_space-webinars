@@ -280,7 +280,6 @@ li {
   background-repeat: no-repeat;
   padding-bottom: var(--size-xxs);
   padding-top: var(--size-xxl);
-  border-bottom: var(--size-xxxxs) solid var(--color-main);
   height: 100vh;
 }
 .hero__content {
