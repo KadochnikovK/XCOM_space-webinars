@@ -15,7 +15,7 @@
 
         //   margin: auto;
         @include md {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             grid-template-rows: auto;
             gap: var(--size-sm);
         }
@@ -41,7 +41,7 @@
         grid-column: 1 / -1;
 
         @include md {
-            grid-column: 4;
+            grid-column: 5;
         }
     }
 
@@ -56,7 +56,6 @@
         font-weight: 600;
         margin-bottom: var(--space-md);
         line-height: 1.2;
-
     }
 
     &__sub-label {
@@ -85,8 +84,6 @@
             opacity: 0.8;
             text-decoration: underline;
         }
-
-
     }
 
     &__social {
@@ -127,7 +124,6 @@
         &:hover {
             opacity: 0.8;
         }
-
     }
 
     &__copy {
@@ -145,8 +141,6 @@
         @include md {
             flex-direction: row;
         }
-
-
     }
 
     &__copy-text {

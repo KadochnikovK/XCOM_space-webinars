@@ -6,11 +6,11 @@
     &__forms {
         display: flex;
         flex-direction: column;
-        gap: var(--size-sm);
+        gap: var(--size-xl);
+
         @include md {
             flex-direction: row;
+            gap: var(--size-sm);
         }
     }
 }
-
-

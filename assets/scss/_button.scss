@@ -12,17 +12,21 @@
     transition: all 0.3s ease-in-out;
     outline: none;
     cursor: pointer;
-
-    &--second {
-        background-color: var(--color-bright);
-        color: var(--color-dark);
-        &:hover {
-            background-color: var(--color-dark);
-            color: var(--color-bright);
-        }
-    }
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.1;
 
     &:hover {
         background-color: var(--color-dark);
+    }
+
+    &--second {
+        background-color: var(--color-bright);
+        color: var(--color-second);
+        &:hover {
+            background-color: var(--color-second);
+            color: var(--color-bright);
+        }
     }
 }

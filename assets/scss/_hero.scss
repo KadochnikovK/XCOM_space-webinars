@@ -38,14 +38,18 @@
         margin-top: auto;
         display: flex;
         justify-content: space-between;
-        align-items: end;
+        gap: var(--size-md);
         font-size: var(--size-xs);
         text-transform: uppercase;
+        flex-direction: column;
+
+        @include sm {
+            align-items: end;
+            flex-direction: row;
+        }
         * {
             font-weight: 700;
         }
-
-        
 
         .arrow {
             width: var(--size-xs);

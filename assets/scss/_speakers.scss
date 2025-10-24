@@ -5,6 +5,7 @@
     &__headline {
         font-size: var(--size-xs);
         text-transform: uppercase;
+        font-weight: 700;
     }
     &__name {
         margin-top: var(--size-xl);
@@ -20,12 +21,13 @@
         margin-top: var(--size-lg);
         display: flex;
         flex-direction: column;
-        font-size: var(--size-lg);
+        font-size: var(--size-xxl);
         text-transform: uppercase;
         font-weight: 700;
+        line-height: 1.1;
         &::before {
             content: "[" counter(number-counter) "]";
-            font-size: 3.5vw;
+            font-size: var(--size-lg);
             top: 1.7vw;
 
             // position: absolute;

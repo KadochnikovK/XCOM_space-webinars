@@ -1,16 +1,35 @@
 .form {
     display: flex;
     flex-direction: column;
-    padding: var(--size-sm);
+    // padding: var(--size-sm);
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: var(--size-sm);
 
     &__headline {
         color: var(--color-bright);
-        font-size: var(--size-xxs);
+        font-size: var(--size-xl);
+        // margin-bottom: var(--size-sm);
+        font-weight: 700;
+
+        &--description {
+            &::before {
+                content: "[предварительная]";
+                text-transform: uppercase;
+                font-size: var(--size-xs);
+                position: absolute;
+                transform: translateY(calc(var(--size-xxxs) * -1));
+            }
+        }
+    }
+
+    &__description {
+        text-transform: uppercase;
+        font-size: var(--size-sm);
+        color: var(--color-second);
+        line-height: 1.1;
+        font-weight: 700;
         margin-bottom: var(--size-sm);
-        font-family: Second;
     }
 
     &__button {
@@ -69,12 +88,12 @@
     &__input {
         padding: var(--size-sm) var(--size-md);
         font-size: var(--size-xs);
-        border: 1px solid var(--color-dark);
+        border: 1px solid var(--color-second);
         border-radius: var(--size-sm);
         width: 100%;
         background-color: var(--color-bright);
         position: relative;
-        color: var(--color-dark);
+        color: var(--color-second);
         transition: all 0.2s ease;
 
         &:focus {
@@ -82,7 +101,7 @@
         }
 
         &::placeholder {
-            color: var(--color-dark);
+            color: var(--color-second);
             opacity: 0.7;
         }
     }
@@ -94,6 +113,11 @@
         font-size: var(--size-sm);
         color: var(--color-second);
         font-family: "Second", sans-serif;
+        height: var(--size-md);
+
+        img {
+            height: 100%;
+        }
     }
 
     &__checkbox {
@@ -101,7 +125,7 @@
         opacity: 0;
         left: 0;
 
-        &+label {
+        & + label {
             position: relative;
             cursor: pointer;
             padding: 0;
@@ -113,7 +137,7 @@
             min-height: var(--size-sm);
         }
 
-        &+label:before {
+        & + label:before {
             content: "";
             position: absolute;
             left: calc(-1 * var(--size-lg));
@@ -127,19 +151,19 @@
             box-sizing: border-box;
         }
 
-        &:checked+label:after {
+        &:checked + label:after {
             content: "";
             position: absolute;
-            left: calc(-1 * var(--size-lg) + var(--size-xxs) * .35);
+            left: calc(-1 * var(--size-lg) + var(--size-xxs) * 0.35);
             top: 50%;
             transform: translateY(-50%);
             width: var(--size-xxs);
             height: var(--size-xxs);
-            background: var(--color-dark);
+            background: var(--color-second);
             border-radius: 10pc;
         }
 
-        &:focus+label:before {
+        &:focus + label:before {
             box-shadow: 0 0 0 2px var(--color-main);
         }
     }
