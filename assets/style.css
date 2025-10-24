@@ -667,7 +667,7 @@ li {
   color: var(--color-main);
   font-size: var(--size-sm);
   border-radius: var(--size-sm);
-  padding: var(--size-xxs) var(--size-xl);
+  padding: var(--size-sm) var(--size-xl);
   background-color: var(--color-second);
   text-align: center;
   width: 100%;
